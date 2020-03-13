@@ -85,6 +85,7 @@ export default class Resource {
     // When we implement a more generic solution for the callbacks, I think this method becomes obsolete.
 
     let error: ApiError;
+    console.error(responseOrMessage);
 
     if (typeof responseOrMessage == 'string') {
       error = new ApiError(responseOrMessage);
